@@ -1,0 +1,39 @@
+<html>
+<head>
+    </head>
+
+    <body>
+<h1><p align="right">Łukasz</p></h1>
+<button type="button" onclick="silnia()"> silnia </button>
+<button type="button" onclick="fibo()"> fibo </button>
+<script>
+function(silnia)
+{
+var n = prompt("liczba:", "");
+var i = 1;
+var s = 1;
+while (i <= n) s *= i++;
+alert(n + '! = ' + s);
+}
+
+</script>
+
+<script>
+    //Rekurencja
+    function fibo(n)
+    {
+      if (n == 0) return 0;
+      if (n == 1) return 1;
+      return fibo(n-1)+fibo(n-2);
+    }
+    document.write(fibo(19));
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
