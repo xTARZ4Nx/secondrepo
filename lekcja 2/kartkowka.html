@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script>
+        
+function rand( min, max ){
+min = parseInt( min, 10 );
+max = parseInt( max, 10 );
+if ( min > max ){
+var tmp = min;
+min = max;
+max = tmp;
+    }
+return Math.floor( Math.random() * ( max - min + 1 ) + min );
+}
+</script>
+</head>
+
+<body>
+
+<input type="text" onclick="show_confirm()"/>
+<br>
+<input type="button" onclick="show_confirm()" value="pokaz wynik"/>
+</body>
+
+</html>
