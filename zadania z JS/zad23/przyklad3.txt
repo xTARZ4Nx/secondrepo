@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function dziel(){
+                window.open("przyklad3.html");
+            }
+            function program(){
+                window.open("przyklad3.txt");
+            }
+            function plik(){
+                window.open("przyklad3_zewnetrzny.js",);
+            }
+        </script>
+    </head>
+
+    <body>
+
+
+        <input type="button" onclick="dziel()" value="Działanie programu"><br><br>
+        <input type="button" onclick="program()" value="Listing programu"><br><br>
+        <input type="button" onclick="plik()" value="Listing pliku zewnętrznego"><br>
+    </body>
+</html>

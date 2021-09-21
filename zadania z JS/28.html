@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script> 
+            function marka(moc, napęd, typ, data)
+            {
+                this.moc = moc;
+                this.napęd = napęd;
+                this.typ = typ;
+                this.data = data;
+            }
+            marka.prototype.wypisz = function(){document.write("MOC "+this.moc+" napęd: "+this.napęd+" typ "+this.typ+" data "+this.data+"<br>");}
+                var  w1= new marka('250KM','FWD','sedan','2015 rok');
+                w1.wypisz();
+                var  w2= new marka('670KM','AWD','sedan','2020 rok');
+                w2.wypisz();
+                var  w3= new marka('1000KM','RWD','coupe','1992 rok');
+                w3.wypisz();
+        </script>
+    </body>
+</html>
