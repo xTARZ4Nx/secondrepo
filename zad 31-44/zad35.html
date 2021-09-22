@@ -1,0 +1,26 @@
+<html>
+<!-- metatagi -->
+<head>
+<script type="text/javascript">
+function wyswietlDate(){
+ var Today = new Date();
+ var Month = (Today.getMonth()+1);
+ var Day = Today.getDate();
+ var Year = Today.getFullYear();
+ if(Year <= 99) Year += 1900
+ return Day + "-" + Month + "-" + Year;
+}
+</script>
+</head>
+<body>
+<script type="text/javascript">
+ document.write("Łukasz Sasin " + wyswietlDate() + "<br>");
+ document.write("Przegladarka: " + navigator.appName+ "<br>");
+ document.write("Wersja przegladarki: " + navigator.appVersion+ "<br>");
+ document.write("Wszystkie dane przegladarki: " + navigator.userAgent+ "<br>");
+ document.write("System operacyjny: " + navigator.oscpu+ "<br>");
+ document.write("Przegladarka pracuje w trybie: " + navigator.onLine+ "<br>");
+ document.write("Obsluga Java: " + navigator.javaEnabled()+ "<br>");
+</script>
+</body>
+</html>

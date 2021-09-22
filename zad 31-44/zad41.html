@@ -1,0 +1,19 @@
+<html>
+ <head>
+ <title>zad41</title>
+ <script language="JavaScript">
+function historia(){
+document.write(window.history.length)
+}
+</script>
+ </head>
+<body>
+ <form>
+<input type="button" name="przycisk1" value="Cofnij" onclick="window.history.back()">
+<input type="button" name="przycisk2" value="Do przodu" onclick="window.history.forward()">
+<input type="button" name="przycisk3" value="historia" onclick="historia()"> 
+<input type="button" name="przycisk3" value="Cofnij o 2" onclick="window.history.go(-2)">
+<input type="button" name="przycisk3" value="Odswiez" onclick="window.history.go(0);">
+</form>
+</body>
+</html>

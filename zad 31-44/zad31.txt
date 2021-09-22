@@ -1,0 +1,18 @@
+Wymień oraz opisz obiekty przeglądarki
+• window
+• navigator
+
+Obiekt window
+1. Opisuje bieżące okno przeglądarki.
+2. Jest najważniejszym obiektem w hierarchii, dlatego odwołanie do jego właściwości lub metod
+nie wymaga podania nazwy obiektu.
+3. Tworzony jest automatycznie podczas otwierania okna przeglądarki.
+4. Posiada wiele właściwości przydatnych podczas tworzenia strony.
+Obiekt navigator
+1. Pozwala na dostęp do informacji dotyczących przeglądarki.
+2. Służy do ustalenia wersji przeglądarki używanej przez użytkownika.
+3. Właściwości tego obiektu mogą być tylko odczytywane nie mogą być zmieniane.
+4. Najczęściej używa się go do sprawdzenia, czy przeglądarka jest odpowiednia do
+zastosowanej wersji języka JavaScript.
+5. Szczególnie przydatnym jest window.navigator.userAgent – to tekst identyfikujący
+przeglądarkę. 
