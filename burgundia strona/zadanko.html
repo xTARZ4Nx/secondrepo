@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="odpada.css">
+
+    </head>
+<body>
+  
+    <div id="gorne">  
+        
+<b>Witómë Hopaku</b>
+
+</div>
+
+        <div id="herb">
+<a href="https://pl.wikipedia.org/wiki/Burgundia"><img src="herb.png" width="170px" height="150px" title="cog"/> </a> 
+        </div>
+    
+    
+    
+    </div>
+
+    <div id="lewe">  
+        <p> Potężna armia składa się z: </p>
+
+        <p>Słabiutka armia wroga: </p>
+    </div>
+
+
+    <div id="prawy">  
+        
+        Podaj liczbe artylerzystów: <input type="number" id="arta"><br><br>
+
+        Podaj liczbe kawalerzystów: <input type="number" id="kawale"><br><br>
+        
+        Podaj liczbe muszkieterów: <input type="number" id="muszkie">
+<br>
+        <input type="button" onclick="klikaj()" value="pokazuj">
+</div>
+
+    <div id="stopka">  
+
+        <div id="kon">
+            <img src="konik.gif" title="konik"/> </a> 
+                    </div>
+
+
+                    <div id="smok">
+                        <img src="smok.gif" title="smoczek"/> </a> 
+                                </div>            
+    
+</div>
+
+    <script>
+        function klikaj(){
+
+            
+
+
+            var ar = parseInt(arta.value);
+            var ka = parseInt(kawale.value);
+            var mu = parseInt(muszkie.value);
+
+        var wszystko = Math.round(Math.random()*18+2);
+
+            var a = Math.pow(ar,wszystko);
+            var k = Math.pow(ka,wszystko);
+            var m = Math.pow(mu,wszystko);
+lewe.innerHTML="Potężna armia składa się z:<br><br>"+ar+" artylerzystów<br><br>"+ka+
+" kawalerzystów<br><br>"+mu+" muszkieterów<br><br><br>"+"Słabiutka armia wroga: <br><br>"
++a+" artylerzystów<br><br>"+k+" kawalerzystów<br><br>"+m+" muszkieterów<br><br>";
+
+kolorki();
+
+        }
+
+function kolorki(){
+
+var kolor = Math.floor(Math.random()*99999)+55555;
+document.getElementById("gorne").style.color="#"+kolor;
+
+    }
+
+
+
+
+    </script>
+
+</body>
+</html>
