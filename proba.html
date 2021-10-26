@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+ width: 410px;
+ flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #00ff00;
+  width: 410px;
+  margin: 5px;
+  padding: 35px;
+  text-align: center;
+  font-size: 35px;
+  line-height: 45px; 
+}
+</style>
+</head>
+<body> <center>
+    <div class="flex-container">
+        <div id="km">&nbsp</div>       
+      </div>
+<div class="flex-container">
+  <div onclick="a()">1</div>
+  <div onclick="b()">2</div>
+  <div onclick="c()">3</div>  
+  
+   <div>+</div>  
+</div>
+
+<div class="flex-container">
+  <div onclick="d()">4</div>
+  <div onclick="e()">5</div>
+  <div onclick="f()">6</div>
+  
+  <div>-</div>  
+</div>
+
+<div class="flex-container">
+  <div onclick="g()">7</div>
+  <div onclick="h()">8</div>
+  <div onclick="i()">9</div>  
+  
+  <div>*</div>  
+</div>
+
+<div class="flex-container">
+  <div onclick="k()">C</div>
+  <div onclick="j()">0</div>
+  <div>=</div>  
+  
+  <div>/</div>  
+</div>
+</center>
+
+<script>
+    function a(){
+        km.innerHTML+=1;
+    }
+    function b(){
+        km.innerHTML+=2;
+    }
+    function c(){
+        km.innerHTML+=3;
+    }
+    function d(){
+        km.innerHTML+=4;
+    }
+    function e(){
+        km.innerHTML+=5;
+    }
+    function f(){
+        km.innerHTML+=6;
+    }
+    function g(){
+        km.innerHTML+=7;
+    }
+    function h(){
+        km.innerHTML+=8;
+    }
+    function i(){
+        km.innerHTML+=9;
+    }
+    function j(){
+        km.innerHTML+=0;
+    }
+    function k(){
+        km.innerHTML="&nbsp";
+    }
+    </script>
+</body>
+</html>
+
+
