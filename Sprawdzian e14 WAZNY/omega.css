@@ -1,0 +1,40 @@
+#baner{
+  background-color: #45517D;
+  text-align: right;
+width: 100%;
+color: white;
+font-size: 120%;
+height: 60px;
+}
+
+#lewe{
+    width: 40%;
+    height: 500px;
+    background-color: #61B2EC;
+float: left;
+}
+
+#prawy{
+    width: 60%;
+    height: 500px;
+    background-color: #8EC9F2;
+float: right;
+}
+
+footer {
+  background-color:#45517D;
+color: white;
+font-size: 150%;
+text-align: center;
+clear: both;
+}
+
+a{
+    color: orange;
+}
+a:visited{
+    color: green;
+}
+table{
+    width: 100%;
+}
